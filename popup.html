@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
@@ -19,15 +19,63 @@
             color: #e4e4e7;
             font-family: 'JetBrains Mono', monospace;
             padding: 16px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            overflow: hidden;
 
+        }
+
+        .main_header {
+            margin-bottom: 20px;
+
+        }
+
+        .main_btn {
+            margin-bottom: 20px;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h2 class="font-monospace text-success text-center ">Null Distract</h2>
+        <h3 class="font-monospace text-success text-center main_header">Null Distract</h3>
     </header>
+    <main>
+        <div class="row main_btn">
+            <div class="col-6 text-center">
+                <button type="submit">Block Site</button>
+            </div>
+            <div class="col-6 text-center">
+                <button type="submit">Add Timer</button>
+
+            </div>
+
+
+
+
+        </div>
+        <!-- add the d-none class to those element which you want to remove -->
+        <div id="blocksites" class="">
+
+
+            <div class="row align-items-center">
+                <div class="col-9">
+                    <input type="text" placeholder="Enter URL here: " id="getwebsite" class="text-center">
+                </div>
+                <div class="col-3 addition_button">
+                    <button type="submit" id="addBtn" class="btn rounded-pill bg-success
+                    text-white fw-bold">+</button>
+                </div>
+
+
+            </div>
+            <div id="pool"></div>
+
+
+        </div>
+
+    </main>
+    <script src="popup.js"></script>
 
 </body>
 
