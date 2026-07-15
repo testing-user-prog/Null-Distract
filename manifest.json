@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "NullDistract",
+    "version": "1.0",
+    "description": "Set your browser distractions to null. Minimalist website blocker and Pomodoro focus timer.",
+    "permissions": [
+        "storage",
+        "alarms",
+        "notifications",
+        "declarativeNetRequest"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
